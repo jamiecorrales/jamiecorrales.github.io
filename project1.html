@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jamie Corrales Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Jamie Corrales Portfolio</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="project1.html">Coding Blog</a></li>
+								<!-- <li><a href="#">Blog</a></li> -->
+								<li><a href="aboutme.html">About me</a></li>
+								<li><a href="https://www.bodyimprovementclubto.com/">Body Improvement Club</a></li>
+								<!-- <li><a href="#">Other</a></li>  -->
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+						<section>
+							<ul class="links">
+								<li>
+									<a href="#">
+										<h3>Projects</h3>
+										<p>List of all my projects!</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h3>About me</h3>
+										<p></p>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.bodyimprovementclubto.com/">
+										<h3>Body Improvement Club</h3>
+										<p></p>
+									</a>
+								</li>
+								
+								
+							</ul>
+						</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Data Scientist in Python Journey</a></h2>
+										<p>Follow my journey!</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2015-11-01">January-01-11</time>
+										<a href="#" class="author"><span class="name">Jamie Corrales</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<!-- <span class="image featured"><img src="images/pic01.jpg" alt="" /></span>  -->
+								<h2>2022-01-18</h2>
+								<p> So I finally finished the course, and the project at the end wasn't as challenging as I'd imagined it to be. The problem starts with you playing a game 
+									with your
+									friend, and you're tasked to walk up to the 60th floor. However, you have to roll a dice one hundred times to go up. If it lands on a 1 or 2, you'll 
+									go one step down. If it's 3, 4 or 5, you'll go one step up. If you throw a 6, you'll throw the die again and walk up the resulting number of steps. Also, 
+									there is a 0.1% chance that you can slip and fall to the first floor. What is the chance that you will win this bet? To solve this, we have to simulate 
+									this process thousands of times and see what fraction of the simulations you will reach 60 steps. </p>
+
+								<p style="text-align:center;">
+									<img src="images/bap1.jpg" alt="centered image" 
+											width="400" 
+											height="300" 
+									/>	
+								</p>	
+
+								<p>
+									The 5th line of code tells Python to run the experiment 500 times. "Random_walk = [0]" means we start at the bottom of the empire state building, and the following
+									code tells Python for each experiment, you are going to roll the dice 100 times. In the 9th line, we specify that the dice can take up a random number between
+									1 and 6, and the following several lines set up the conditions. The 16th line factors in the 0.01% chance you might slip and fall. Finally, we transpose the NumPy
+									array, create a new array consisting of the last row (how high you climbed), and plot its histogram. 
+								</p>
+
+
+								<p style="text-align:center;">
+									<img src="images/bap2.jpg" alt="centered image" 
+											width="400" 
+											height="300" 
+									/>	
+								</p>	
+								The NumPy array ends contains 500 integers, where each integer represents the endpoint of the experiment (random walk). We want to calculate the chance that
+                                this endpoint is greater than or equal to 60. There are two ways to do this. You can use np.mean(ends > 60) - datacamp solution. Another way is by counting
+                                the number of values greater or equal to 60 using np.count_nonzero(ends >= 60) and dividing this by 500, which returns a value of 78.4%. 
+								
+								</p>
+
+								<h2>2022-01-14</h2>
+								<p>
+								It's been a few days since I last updated this blog, but I've learnt a few new things. In today's lesson, I learnt about pandas and how to import it
+								using "import pandas as pd". I learnt how to create a dataframe from a dictionary which is a time-consuming process if you are working with 
+								large amounts of data. Typically, you would import a csv using, "pd.read_csv("insert.csv", index_col = 0). We were also introduced to if, elife, else commands 
+								and filtering dataframes. The code below is an example of filtering dataframes. From cars, the 9th line specifies that python should select the "cars_per_cap" 
+								column. The following code np.logical_and is a boolean operator which tells python to cpc values greater than 100 and less than 500. Lastly the variable, medium,
+								shows us a dataframe of all observations with cars_per_cap between 100 and 500. I hope to finish this course by tomorrow! The last chapter of this course is a 
+								a project! See you soon.
+									<p style="text-align:center;">
+										<img src="images/cap3.jpg" alt="centered image" 
+												width="400" 
+												height="300" 
+										/>	
+									</p>	
+								<h2>2022-01-11</h2>
+								<p> Today I started the Intermediate Python course on Datacamp. The stuff today was very basic, it covered creating graphs such as scatter plots, 
+									histograms and line graphs. Here is a graph that I created using plt.scatter(pop, life_exp) - super simple, it's just a scatter plot of 
+								population plotted against age which illustrates that there is no clear relationship
+								between the two variables. On a side note, I'm also learning a bit of HTML to code this website (I had to look up the code to center the image below!).
+								</p>
+							
+									<p style="text-align:center;">
+										<img src="images/graph1.jpg" alt="centered image" 
+												width="300" 
+												height="300" 
+										/>		
+										
+
+								<footer>
+									<ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">128</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
